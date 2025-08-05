@@ -8,33 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Hearth - Warm & Cozy Design System */
+    --background: 25 40% 98%;
+    --foreground: 25 15% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 20 50% 97%;
+    --card-foreground: 25 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 20 50% 97%;
+    --popover-foreground: 25 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Soft Rose Primary */
+    --primary: 340 50% 75%;
+    --primary-foreground: 340 20% 98%;
+    --primary-glow: 340 60% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Gentle Sky Secondary */
+    --secondary: 200 40% 88%;
+    --secondary-foreground: 200 20% 30%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Warm Cream Muted */
+    --muted: 35 30% 92%;
+    --muted-foreground: 25 10% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Soft Peach Accent */
+    --accent: 15 50% 88%;
+    --accent-foreground: 15 20% 30%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 70%;
+    --destructive-foreground: 0 20% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 25 25% 90%;
+    --input: 25 25% 90%;
+    --ring: 340 50% 75%;
+
+    /* Chat-specific colors */
+    --message-sent: 340 45% 85%;
+    --message-sent-foreground: 340 20% 20%;
+    --message-received: 200 35% 90%;
+    --message-received-foreground: 200 20% 20%;
+    --chat-background: 25 60% 96%;
+
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(340 50% 85%), hsl(15 50% 88%));
+    --gradient-sky: linear-gradient(135deg, hsl(200 40% 88%), hsl(220 30% 92%));
+    --gradient-glow: radial-gradient(circle, hsl(340 60% 85% / 0.3), transparent);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(340 30% 80% / 0.15);
+    --shadow-message: 0 2px 8px hsl(340 20% 70% / 0.1);
+    --shadow-float: 0 8px 32px hsl(340 40% 75% / 0.2);
 
     --radius: 0.5rem;
 

@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -61,7 +62,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				chat: {
+					background: 'hsl(var(--chat-background))',
+					'message-sent': 'hsl(var(--message-sent))',
+					'message-sent-foreground': 'hsl(var(--message-sent-foreground))',
+					'message-received': 'hsl(var(--message-received))',
+					'message-received-foreground': 'hsl(var(--message-received-foreground))'
 				}
+			},
+			backgroundImage: {
+				'gradient-warm': 'var(--gradient-warm)',
+				'gradient-sky': 'var(--gradient-sky)',
+				'gradient-glow': 'var(--gradient-glow)'
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'message': 'var(--shadow-message)',
+				'float': 'var(--shadow-float)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +102,49 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'message-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(8px) scale(0.95)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0) scale(1)'
+					}
+				},
+				'bounce-gentle': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-2px)'
+					}
+				},
+				'glow-pulse': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px hsl(340 50% 75% / 0.3)'
+					},
+					'50%': {
+						boxShadow: '0 0 30px hsl(340 50% 75% / 0.5)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-4px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'message-in': 'message-in 0.3s ease-out',
+				'bounce-gentle': 'bounce-gentle 2s ease-in-out infinite',
+				'glow-pulse': 'glow-pulse 3s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
